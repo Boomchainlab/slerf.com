@@ -108,6 +108,10 @@ module.exports = function(grunt) {
       }
     },
 
+    eslint: {
+      target: ['src/js/*.js', 'tasks/**/*.js']
+    },
+
     copy: {
       assets: {
         files: [{
@@ -214,6 +218,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-puglint');
+    grunt.loadNpmTasks('grunt-eslint');
   }
 
   grunt.registerTask('build', 'Build the site for production', [
@@ -232,6 +237,7 @@ module.exports = function(grunt) {
   grunt.registerTask('test', [
     'build',
     'jshint',
+    'eslint',
     'puglint',
     // Requires Java 8+
     'htmllint'
