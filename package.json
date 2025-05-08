@@ -16,7 +16,9 @@
     "build": "grunt build",
     "start": "node server.js",
     "test": "grunt test",
-    "dev": "grunt dev"
+    "dev": "grunt dev",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -52,6 +54,9 @@
     "grunt-html": "~17.0.1",
     "grunt-nodemon": "~0.4.2",
     "grunt-open": "^0.2.4",
-    "grunt-puglint": "~1.0.0"
+    "grunt-puglint": "~1.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0",
+    "grunt-eslint": "^23.0.0"
   }
 }

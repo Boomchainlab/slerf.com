@@ -1,4 +1,5 @@
 /* jshint browser:true, jquery:true, node:false */
+/* global jQuery */
 
 (function ($) {
   'use strict';

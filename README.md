@@ -25,3 +25,13 @@ use the development mode instead:
 ```shell
 npm run dev
 ```
+
+4. Run linting:
+   ```shell
+   npm run lint
+   ```
+
+5. Run formatting:
+   ```shell
+   npm run format
+   ```
